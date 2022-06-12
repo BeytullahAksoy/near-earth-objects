@@ -84,11 +84,11 @@ def main():
     current_month = today.split()[0][5:7]
     current_day = today.split()[0][8:10]
     start_date = st.sidebar.date_input(
-        "start date",
+        "Start date",
         datetime.date(int(current_year), int(current_month), int(current_day)),
     )
     end_date = st.sidebar.date_input(
-        "start date",
+        "End date",
         datetime.date(int(current_year), int(current_month), int(current_day) - 7),
     )
     date_range = (start_date - end_date).days
